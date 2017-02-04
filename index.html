@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PogChamp.Live - The ultimate eSports experience</title>
+    <meta name="description" content="PogChamp.live's mission statement is to be the ultimate eSports viewing experience.">
+</head>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-2039133481648276",
+        enable_page_level_ads: true
+    });
+</script>
+
+<script type="text/javascript">var switchTo5x = true;</script>
+<script type="text/javascript" id="st_insights_js"
+        src="http://w.sharethis.com/button/buttons.js?publisher=4be0df09-f80f-463e-a1b3-fd13dcbdba72"></script>
+<script type="text/javascript">stLight.options({
+    publisher: "4be0df09-f80f-463e-a1b3-fd13dcbdba72",
+    doNotHash: false,
+    doNotCopy: false,
+    hashAddressBar: false
+});</script>
+<link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<style>
+    html {
+        height: 100%;
+        font-family: sans-serif;
+        line-height: 1.15;
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+        min-height: 100%;
+        font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 1.1rem;
+        font-weight: 300;
+        line-height: 1.5;
+        color: #fff;
+        background-color: #000;
+    }
+    .lead{
+        font-size: 1.9rem;
+    }
+
+
+</style>
+<!--<link href="theme/dist/toolkit-light.min.css" type="text/css" rel="stylesheet">-->
+
+
+<body>
+
+<div class="pos-f-t">
+    <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-inverse p-4">
+            <div class="offset-1">
+                <p class="lead text-white">What is PogChamp.live?</p>
+                <p class="">PogChamp.live started out as a personal project with the goal to be able to watch all
+                    eSports Twitch.tv streams at the same time on a single screen. Today, the goal remains the same, but
+                    I would like to share my creation with the world. </p>
+                <p class="">We envision this being used by friends looking to watch all the live tournaments
+                    simultaneously on their big screen, or eSports bars to broadcast multiple games on a single screen.
+                    Anyone and everyone is welcome to use PogChamp.live, and we greatly value your feedback and
+                    suggestions, see our contact info below.</p>
+                <p class="">Our mission statement is to be the ultimate eSports viewing experience.</p>
+                <div class="" style="display: none;" id="meta">
+                    <p>The best way to watch the LCS.</p>
+                    <p>The best way to watch the NALCS.</p>
+                    <p>The best way to watch the EULCS.</p>
+                    <p>The best way to watch Competitive Gaming.</p>
+                    <p>The best way to watch eSports.</p>
+                    <p>The best way to watch Competitive Overwatch.</p>
+                    <p>The best way to watch Competitive CS:GO.</p>
+                    <p>The best way to watch Competitive Counterstrike.</p>
+                    <p>The best way to watch Competitive Halo.</p>
+                    <p>The best way to watch Competitive Hearthstone.</p>
+                    <p>The best way to watch Competitive WoW.</p>
+                    <p>The best way to watch Competitive World Of Warcraft.</p>
+                    <p>The best way to watch Professional Gaming.</p>
+                </div>
+                <p class="lead text-white">How can I support this site?</p>
+                <p class="">If you love PogChamp.live and would like to support our site, you have two options below. We
+                    will never put Ads on our main site, as we do not want to take away from the user experience, nor
+                    would we ever ask for money, but we are greatly appreciative of any and all support we receive.</p>
+                <ol>
+                    <li>Donate to PogChamp.live here: <a href="http://paypal.me/mermadia" target="_blank">
+                        <button class="btn btn-sm btn-success">Donate</button>
+                    </a></li>
+                    <li>Visit our Ad site, and watch a few video Ads here: <a
+                            href="http://www.pogchamp.live/ad-support.html" target="_blank">
+                        <button class="btn btn-sm btn-success">Ad Site</button>
+                    </a></li>
+                    <li>Share this site on your favorite social media! Looks for share buttons below.</li>
+
+                </ol>
+
+
+                <p class="lead text-white">How can I contact PogChamp.live?</p>
+                <p>We are always looking for feedback, partners, suggestions, and bug reports. You may reach us at <a
+                        href="mailto:pogchamp@pogchamp.live">pogchamp@pogchamp.live</a>.</p>
+                <div class="bg-faded col-sm-3 text-sm-center">
+                    <span class='st_sharethis' displayText='ShareThis'></span>
+                    <span class='st_facebook' displayText='Facebook'></span>
+                    <span class='st_reddit' displayText='Reddit'></span>
+                    <span class='st_twitter' displayText='Tweet'></span>
+                    <span class='st_linkedin' displayText='LinkedIn'></span>
+                    <span class='st_tumblr' displayText='Tumblr'></span>
+                    <span class='st_pinterest' displayText='Pinterest'></span>
+                    <span class='st_email' displayText='Email'></span>
+                </div>
+                <br>
+                <hr class="jumbotron-hr">
+                <br>
+                <p class="lead text-white">Additional Controls</p>
+                <div class="form-group">
+                    <a href="http://www.pogchamp.live/"><button class="btn btn-outline-primary btn-block" type="button" style="margin-left: 10px;">Reset Interface</button></a>
+                    <button class="btn btn-outline-primary" type="button" id="toggle-chat" style="display: none;">Hide / Show Chat</button>
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </div>
+    <nav class="navbar navbar-inverse  text-sm-center" style="background-color: #000;">
+
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+
+        <a class="navbar-brand" href="#">
+            <p class=" ">PogChamp.Live</p>
+
+        </a>
+    </nav>
+</div>
+
+<div id="app-main">
+
+</div>
+
+<!--
+<div class="row">
+
+    <iframe
+            class="stream-frame"
+            id="vid1"
+            src="http://player.twitch.tv/?channel=nalcs1"
+            height="540"
+            width="50%"
+            frameborder="0"
+            scrolling="no"
+            allowfullscreen="false">
+    </iframe>
+    <iframe
+            class="stream-frame"
+            id="vid2"
+            src="http://player.twitch.tv/?channel=nalcs2"
+            height="540"
+            width="50%"
+            frameborder="0"
+            scrolling="no"
+            allowfullscreen="false">
+    </iframe>
+</div>
+-->
+
+
+</body>
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+     aria-hidden="true" id="selection-modal" style="color:#000">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header text-sm-center">
+                <p class="lead">Select Stream(s)</p>
+
+            </div>
+            <div class="modal-body">
+                <p class="">Click a game below to expand and see available streams.</p>
+                <!--CSGO-->
+                <button class="btn btn-outline-primary btn-block btn-lg" data-toggle="collapse" data-target="#csgo-collapse">
+                    CS:GO
+                </button>
+                <div class="collapse" id="csgo-collapse">
+                    <p>
+                        <small>ELEAGUEtv</small>
+                    </p>
+                    <div class="form-check form-check-inline ">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" id="eleaguetv-check" value="eleaguetv">
+                            <span class="badge" id="eleaguetv-status"></span>
+                            eleaguetv <small id="eleaguetv-title"></small>
+
+                        </label>
+                    </div>
+                    <p>
+                        <small>ESL</small>
+                    </p>
+                    <div class="form-check form-check-inline ">
+                        <label class="form-check-label">
+
+                            <input class="form-check-input" type="checkbox" id="ESL_CSGO-check" value="ESL_CSGO">
+                            <span class="badge" id="esl_go-status"></span>
+                            ESL_CSGO
+                            <small id="esl_go-title"></small>
+                        </label>
+                    </div>
+                </div>
+                <br>
+                <!--Dota2-->
+                <button class="btn btn-outline-primary btn-block btn-lg" data-toggle="collapse" data-target="#dotastarladder_en-collapse">
+                    Dota2
+                </button>
+                <div class="collapse" id="dotastarladder_en-collapse">
+                    <p>
+                        <small>StarLadder</small>
+                    </p>
+                    <div class="form-check form-check-inline ">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" id="dotastarladder_en-check" value="dotastarladder_en">
+                            <span class="badge" id="dotastarladder_en-status"></span>
+                            dotastarladder_en <small id="dotastarladder_en-title"></small>
+
+                        </label>
+                    </div>
+                    <!--beyondthesummit-->
+                    <p>
+                        <small>beyondthesummit</small>
+                    </p>
+                    <div class="form-check form-check-inline ">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" id="beyondthesummit-check" value="beyondthesummit">
+                            <span class="badge" id="beyondthesummit-status"></span>
+                            beyondthesummit <small id="beyondthesummit-title"></small>
+
+                        </label>
+                    </div>
+                    <p>
+                        <small>ESL</small>
+                    </p>
+                    <div class="form-check form-check-inline ">
+                        <label class="form-check-label">
+
+                            <input class="form-check-input" type="checkbox" id="esl_dota2-check" value="esl_dota2">
+                            <span class="badge" id="esl_dota2-status"></span>
+                            esl_dota2
+                            <small id="esl_dota2-title"></small>
+                        </label>
+                    </div>
+                </div>
+                <br>
+
+                <!--HALO-->
+                <button class="btn btn-outline-primary btn-block btn-lg" data-toggle="collapse" data-target="#halo-collapse">
+                    Halo
+                </button>
+                <div class="collapse" id="halo-collapse">
+                    <p>
+                        <small>ESL</small>
+                    </p>
+                    <div class="form-check form-check-inline ">
+                        <label class="form-check-label">
+
+                            <input class="form-check-input" type="checkbox" id="ESL_Halo-check" value="ESL_Halo">
+                            <span class="badge" id="esl_halo-status"></span>
+                            ESL_Halo
+                            <small id="esl_halo-title"></small>
+                        </label>
+                    </div>
+                </div>
+                <br>
+                <!-- hearthstone esl_hearthstone-->
+                <button class="btn btn-outline-primary btn-block btn-lg" data-toggle="collapse" data-target="#hearthstone-collapse">
+                    Hearthstone
+                </button>
+                <div class="collapse" id="hearthstone-collapse">
+                    <p>
+                        <small>ESL</small>
+                    </p>
+                    <div class="form-check form-check-inline ">
+                        <label class="form-check-label">
+
+                            <input class="form-check-input" type="checkbox" id="esl_hearthstone-check" value="esl_hearthstone">
+                            <span class="badge" id="esl_hearthstone-status"></span>
+                            ESL_Hearthstone
+                            <small id="esl_hearthstone-title"></small>
+                        </label>
+                    </div>
+                    <p>
+                        <small>PlayHearthStone</small>
+                    </p>
+                    <div class="form-check form-check-inline ">
+                        <label class="form-check-label">
+
+                            <input class="form-check-input" type="checkbox" id="PlayHearthStone-check" value="PlayHearthStone">
+                            <span class="badge" id="playhearthstone-status"></span>
+                            PlayHearthStone
+                            <small id="playhearthstone-title"></small>
+                        </label>
+                    </div>
+                </div>
+                <br>
+                <!-- hearthstone esl_hearthstone-->
+                <button class="btn btn-outline-primary btn-block btn-lg" data-toggle="collapse" data-target="#herosofthestorm-collapse">
+                    Heros Of The Storm
+                </button>
+                <div class="collapse" id="herosofthestorm-collapse">
+                    <p>
+                        <small>Blizzard</small>
+                    </p>
+                    <div class="form-check form-check-inline ">
+                        <label class="form-check-label">
+
+                            <input class="form-check-input" type="checkbox" id="blizzheroes-check" value="blizzheroes">
+                            <span class="badge" id="blizzheroes-status"></span>
+                            blizzheroes
+                            <small id="blizzheroes-title"></small>
+                        </label>
+                    </div>
+
+                </div>
+                <br>
+
+                <button class="btn btn-outline-primary btn-block  btn-lg" data-toggle="collapse" data-target="#lol-collapse">
+                    League of Legends
+                </button>
+
+                <div class="collapse" id="lol-collapse">
+                    <p>
+                        <small>NA</small>
+                    </p>
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+
+                            <input class="form-check-input" type="checkbox" id="NALCS1-check" value="NALCS1">
+                            <span class="badge" id="nalcs1-status"></span>
+                            NALCS1
+
+                            <small id="nalcs1-title"></small>
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+
+                            <input class="form-check-input" type="checkbox" id="NALCS2-check" value="NALCS2">
+                            <span class="badge" id="nalcs2-status"></span>
+                            NALCS2
+                            <small id="nalcs2-title"></small>
+                        </label>
+                    </div>
+                    <p>
+                        <small>EU</small>
+                    </p>
+                    <div class="form-check form-check-inline ">
+                        <label class="form-check-label">
+
+                            <input class="form-check-input" type="checkbox" id="EULCS1-check" value="EULCS1">
+                            <span class="badge" id="eulcs1-status"></span>
+                            EULCS1
+
+                            <small id="eulcs1-title"></small>
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline ">
+                        <label class="form-check-label">
+
+                            <input class="form-check-input" type="checkbox" id="EULCS2-check" value="EULCS2">
+                            <span class="badge" id="eulcs2-status"></span>
+                            EULCS2
+                            <small id="eulcs2-title"></small>
+                        </label>
+                    </div>
+                    <p>
+                        <small>KR</small>
+                    </p>
+                    <div class="form-check form-check-inline ">
+                        <label class="form-check-label">
+
+                            <input class="form-check-input" type="checkbox" id="LCK1-check" value="LCK1">
+                            <span class="badge" id="lck1-status"></span>
+                            LCK1
+                            <small id="lck1-title"></small>
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline ">
+                        <label class="form-check-label">
+
+                            <input class="form-check-input" type="checkbox" id="LCK2-check" value="LCK2">
+                            <span class="badge" id="lck2-status"></span>
+                            LCK2
+
+                            <small id="lck2-title"></small>
+
+                        </label>
+                    </div>
+
+                    <p>
+                        <small>CN</small>
+                    </p>
+                    <div class="form-check form-check-inline ">
+                        <label class="form-check-label">
+
+                            <input class="form-check-input" type="checkbox" id="LPL1-check" value="LPL1">
+                            <span class="badge" id="lpl1-status"></span>
+                            LPL1
+                            <small id="lpl1-title"></small>
+                        </label>
+                    </div>
+                    <p>
+                        <small>BR</small>
+                    </p>
+                    <div class="form-check form-check-inline ">
+                        <label class="form-check-label">
+
+                            <input class="form-check-input" type="checkbox" id="riotgamesbrazil-check"
+                                   value="riotgamesbrazil">
+                            <span class="badge" id="riotgamesbrazil-status"></span>
+                            riotgamesbrazil
+                            <small id="riotgamesbrazil-title"></small>
+                        </label>
+                    </div>
+
+                    <p>
+                        <small>ESL</small>
+                    </p>
+                    <div class="form-check form-check-inline ">
+                        <label class="form-check-label">
+
+                            <input class="form-check-input" type="checkbox" id="ESL_LOL-check" value="ESL_LOL">
+                            <span class="badge" id="esl_lol-status"></span>
+                            ESL_LOL
+                            <small id="esl_lol-title"></small>
+                        </label>
+                    </div>
+                </div>
+                <br>
+                <!-- Overwatch -->
+                <button class="btn btn-outline-primary btn-block btn-lg" data-toggle="collapse" data-target="#ow-collapse">
+                    Overwatch
+                </button>
+                <div class="collapse" id="ow-collapse">
+                    <p>
+                        <small>ESL</small>
+                    </p>
+                    <div class="form-check form-check-inline ">
+                        <label class="form-check-label">
+
+                            <input class="form-check-input" type="checkbox" id="ESL_Overwatch-check"
+                                   value="ESL_Overwatch">
+                            <span class="badge" id="esl_overwatch-status"></span>
+                            ESL_Overwatch
+                            <small id="esl_overwatch-title"></small>
+                        </label>
+                    </div>
+                </div>
+                <br>
+                <!--SC2-->
+                <button class="btn btn-outline-primary btn-block btn-lg" data-toggle="collapse" data-target="#sc2-collapse">
+                    SC2
+                </button>
+                <div class="collapse" id="sc2-collapse">
+                    <p>
+                        <small>ESL</small>
+                    </p>
+                    <div class="form-check form-check-inline ">
+                        <label class="form-check-label">
+
+                            <input class="form-check-input" type="checkbox" id="ESL_SC2-check" value="ESL_SC2">
+                            <span class="badge" id="esl_sc2-status"></span>
+                            ESL_SC2
+                            <small id="esl_sc2-title"></small>
+                        </label>
+                    </div>
+                </div>
+                <br>
+                <div id="top-ten">
+                    <button class="btn btn-outline-primary btn-block btn-lg" data-toggle="collapse" data-target="#top-ten-collapse">
+                        TOP Streams Online
+                    </button>
+                    <div class="collapse" id="top-ten-collapse">
+                    </div>
+                </div>
+
+                <p>Custom Streams</p>
+                <div class="form-group">
+                    <input type="text" placeholder="Example: imaqtpie, LIRIK, summit1g" class="form-control"
+                           id="custom-stream-input">
+                    <p class="text-muted text-sm-center">
+                        (seperate channel names with commas)
+                    </p>
+                </div>
+
+                <p>
+                    Layout Options
+                </p>
+                <div class="btn-group btn-group-lg col-sm-12" data-toggle="buttons">
+                    <label class="btn btn-outline-primary active  col-sm-6">
+                        <input type="radio" name="layout-options" id="layout-rows" autocomplete="off" checked> Rows
+                    </label>
+                    <label class="btn btn-outline-primary  col-sm-6">
+                        <input type="radio" name="layout-options" id="layout-stacked" autocomplete="off"> Stacked
+                    </label>
+                </div>
+
+                <p>Chat Options</p>
+                <div class="btn-group btn-group-lg col-sm-12" data-toggle="buttons">
+                    <label class="btn btn-outline-primary active  col-sm-6">
+                        <input type="radio" name="options" id="chat-disabled" autocomplete="off" checked> Chat Disabled
+                    </label>
+                    <label class="btn btn-outline-primary  col-sm-6">
+                        <input type="radio" name="options" id="chat-enabled" autocomplete="off"> Chat Enabled
+                    </label>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+
+
+                <button class="btn btn-primary btn-block btn-lg" id="create-btn">
+                    Create Observatory
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+     aria-hidden="true" id="customize-modal" style="color:#000">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Customize Stream(s)</h2>
+
+            </div>
+            <div class="modal-body">
+                <p class="lead">Arrange Windows</p>
+                <div id="arrange-streams-wrap">
+                    <table class="table table-sm">
+                        <thead>
+                        <tr>
+                            <th>Stream</th>
+                            <th>Order</th>
+                            <th>Size</th>
+                        </tr>
+                        </thead>
+                        <tbody id="arrange-streams-fill">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="modal-footer">
+
+                <button class="btn btn-primary btn-block  btn-lg" id="save-btn">
+                    Save Changes
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<script
+        src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+<script src="http://player.twitch.tv/js/embed/v1.js"></script>
+<script src="js/tether.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!--<script src="theme/dist/toolkit.min.js"></script>-->
+<script>
+    function getQueryVariable(variable) {
+        var query = window.location.search.substring(1);
+        var vars = query.split("&");
+        for (var i = 0; i < vars.length; i++) {
+            var pair = vars[i].split("=");
+            if (pair[0] == variable) {
+                return pair[1];
+            }
+        }
+        return (false);
+    }
+</script>
+<script src="js/bundle.js"></script>
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-90996681-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+</html>
